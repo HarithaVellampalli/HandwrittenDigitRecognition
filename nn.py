@@ -46,7 +46,7 @@
 #    3. Performance display
 #
 #       <6 mins>
-#       <Input train size = 784, 60000; Input label size =  (10, 60000); Output train size = 784,        60000; Output label size =  (10, 60000); size_batch = 64; beta = 0.9; epochs = 10;  learning_rate = 0.5>
+#       <Input train size = 784, 60000; Input label size =  (10, 60000); Output train size = 784, 60000; Output label size =  (10, 60000); size_batch = 64; beta = 0.9; epochs = 10;  learning_rate = 0.5>
 #
 ################################################################################
 
@@ -54,7 +54,7 @@ import os.path
 import urllib.request
 import gzip
 import math
-import numpy             as np
+import numpy as np
 from sklearn.metrics import accuracy_score
 
 ################################################################################
@@ -209,7 +209,7 @@ def forward_prop(X, params):
 
     model["Z1"] = np.matmul(params["W1"], X) + params["b1"]
     # model["A1"] = reluAct(model["Z1"]) 
-    #Sigmoid used as it gives better results
+    #Sigmoid
     model["A1"] = sigmoidAct(model["Z1"])
 
     model["Z2"] = np.matmul(params["W2"], model["A1"]) + params["b2"]
