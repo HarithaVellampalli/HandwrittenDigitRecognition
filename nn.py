@@ -3,7 +3,6 @@
 # LOGISTICS
 #
 #    <Haritha Vellampalli>
-#    <2021513505>
 #
 # FILE
 #
